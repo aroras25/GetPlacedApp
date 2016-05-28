@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#757575"
+    android:fillViewport="true"
+    tools:context="com.aroraemc.sahil.getplaced.EricsonAluminiReviews">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:text="Alumini Reviews"
+            android:textColor="@android:color/white"
+            android:textSize="35sp"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="20dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:id="@+id/pic"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/firstface"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/name"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="Jacob : "
+                android:layout_toRightOf="@id/pic"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_toRightOf="@+id/pic"
+                android:layout_below="@+id/name"
+                android:text="Great one. Join it ASAP" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/pic2"
+                android:layout_width="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_height="80dp"
+                android:src="@drawable/second"
+                android:scaleType="centerCrop"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/name2"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_toRightOf="@+id/pic2"
+                android:text="Mr. Been : "
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_toRightOf="@+id/pic2"
+                android:layout_below="@+id/name2"
+                android:text="Best Place to Work" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:id="@+id/pic"
+                android:layout_height="80dp"
+                android:src="@drawable/third"
+                android:scaleType="centerCrop"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/name"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:text="Mr. Gunther : "
+                android:layout_toRightOf="@id/pic"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/pic"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/name"
+                android:text="Not a good one for freshers" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+            >
+
+            <ImageView
+                android:id="@+id/pic2"
+                android:layout_width="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_height="80dp"
+                android:src="@drawable/fourth"
+                android:scaleType="centerCrop"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/name2"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/pic2"
+                android:text="Ross : "
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_toRightOf="@+id/pic2"
+                android:layout_below="@+id/name2"
+                android:text="Take it, we will meet you there" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:id="@+id/pic"
+                android:layout_height="80dp"
+                android:src="@drawable/fifth"
+                android:scaleType="centerCrop"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/name"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="Tony Stark : "
+                android:layout_toRightOf="@id/pic"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_toRightOf="@+id/pic"
+                android:layout_below="@+id/name"
+                android:text="Limited technologies used" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+            >
+
+            <ImageView
+                android:id="@+id/pic2"
+                android:layout_width="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_height="80dp"
+                android:src="@drawable/sixth"
+                android:scaleType="centerCrop"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/name2"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/pic2"
+                android:text="Mr. Been's brother : "
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_toRightOf="@+id/pic2"
+                android:layout_below="@+id/name2"
+                android:text="Come and join" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:id="@+id/pic"
+                android:layout_height="80dp"
+                android:src="@drawable/seventh"
+                android:scaleType="centerCrop"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/name"
+                android:layout_height="wrap_content"
+                android:text="Jessica : "
+                android:textColor="@android:color/white"
+                android:layout_toRightOf="@id/pic"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/pic"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/name"
+                android:text="Do not think about it." />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+
+            <ImageView
+                android:id="@+id/pic2"
+                android:layout_width="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_height="80dp"
+                android:src="@drawable/eighth"
+                android:scaleType="centerCrop"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/name2"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/pic2"
+                android:text="Mr. Sahil Arora: "
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/pic2"
+                android:layout_below="@+id/name2"
+                android:text="Being a CEO, I will make sure you get the best out of joining with us." />
+
+        </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+

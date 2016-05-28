@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#757575"
+    android:fillViewport="true"
+    tools:context="com.aroraemc.sahil.getplaced.monthView">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/monthViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:textColor="@android:color/white"
+            android:textSize="35sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/emcLogo"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:src="@drawable/emc" />
+
+            <TextView
+                android:id="@+id/emc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/emcLogo"
+                android:onClick="EMCInfo"
+                android:textColor="@android:color/white"
+                android:textSize="27sp" />
+
+            <TextView
+                android:id="@+id/dateEmc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emc"
+                android:layout_toRightOf="@+id/emcLogo"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ericssonLogo"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ericsson" />
+
+            <TextView
+                android:id="@+id/ericson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ericssonLogo"
+                android:onClick="EricsonInfo"
+                android:textColor="@android:color/white"
+                android:textSize="27sp" />
+
+            <TextView
+                android:id="@+id/dateEricson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ericson"
+                android:layout_toRightOf="@+id/ericssonLogo"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:id="@+id/NoCompanies"
+
+            />
+
+    </LinearLayout>
+
+</ScrollView>
