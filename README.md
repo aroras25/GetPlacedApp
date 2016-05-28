@@ -18,9 +18,9 @@ Password : admin
 
 How to Use the App - 
 - Login into the app with the above credentials.
-- Select the company name which redirects to details about that company drive.
-- Click on the buttons to get to know the Prerequisites, Knowhow(Web Page Links), and the Alumini Reviews for that particular company
+- Select the company which redirects to details about that company drive.
 - Click on the 'Sort By Calendor' button, select a particular month and user gets to know the companies listed for that month.
 - Select the company name displayed which redirects the user to the details about the company drive.
+- Click on the buttons to get to know the Prerequisites, Knowhow(Web Page Links), and the Alumini Reviews for that particular company.
 
 
