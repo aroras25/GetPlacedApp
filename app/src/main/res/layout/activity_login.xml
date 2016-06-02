@@ -6,7 +6,7 @@
     android:id="@+id/login_form"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#757575"
+    android:background="@drawable/gray1"
     tools:context="com.aroraemc.sahil.getplaced.Login">
 
 
@@ -14,6 +14,7 @@
         android:id="@+id/email_login_form"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
         android:orientation="vertical">
 
         <TextView

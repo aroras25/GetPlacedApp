@@ -21,15 +21,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".UpcomingCompanies" />
-        <activity android:name=".EMC" />
-        <activity android:name=".Ericson" />
-        <activity android:name=".EMCKnowHow" />
-        <activity android:name=".EricsonKnowHow" />
-        <activity android:name=".EMCPrerequisites" />
-        <activity android:name=".EricsonPrerequisites" />
-        <activity android:name=".EMCAluminiReviews" />
-        <activity android:name=".EricsonAluminiReviews" />
-        <activity android:name=".Calender" />
         <activity android:name=".monthView" />
         <activity android:name=".Test" />
         <activity
@@ -39,7 +30,11 @@
             android:name=".LoginActivity"
             android:label="@string/title_activity_login" />
         <activity android:name=".ogin" />
-        <activity android:name=".Login"></activity>
+        <activity android:name=".Login" />
+        <activity android:name=".CompanyTemplate" />
+        <activity android:name=".PrerequisitesTemplate" />
+        <activity android:name=".KnowhowTemplate" />
+        <activity android:name=".AluminiReviewsTemplate"></activity>
     </application>
 
 </manifest>

@@ -4,30 +4,101 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
+import android.widget.Toast;
 
-public class UpcomingCompanies extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.List;
+
+public class UpcomingCompanies extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_upcoming_companies);
+
+        Spinner dropDown = (Spinner) findViewById(R.id.spinner);
+        dropDown.setVisibility(View.GONE);
+
     }
-    public void EMCInfo(View view)
-    {
-        Intent intent = new Intent(this, EMC.class);
+
+    public void EMCInfo(View view) {
+        Intent intent = new Intent(this, CompanyTemplate.class);
+        intent.putExtra("companyName",view.getId());
         startActivity(intent);
     }
-    public void EricsonInfo(View view)
-    {
+
+    /*public void EricsonInfo(View view) {
         Intent intent = new Intent(this, Ericson.class);
+        intent.putExtra("companyName",view.getId());
         startActivity(intent);
+    }*/
+
+    public void calender(View view) {
+        Spinner dropDown = (Spinner) findViewById(R.id.spinner);
+        dropDown.setVisibility(View.VISIBLE);
+
+        // Spinner element
+        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+
+        // Spinner click listener
+        spinner.setOnItemSelectedListener(this);
+
+        // Spinner Drop down elements
+        List<String> categories = new ArrayList<String>();
+        categories.add("Select one");
+        categories.add("January");
+        categories.add("February");
+        categories.add("March");
+        categories.add("April");
+        categories.add("May");
+        categories.add("June");
+        categories.add("July");
+        categories.add("August");
+        categories.add("September");
+        categories.add("October");
+        categories.add("November");
+        categories.add("December");
+
+        // Creating adapter for spinner
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, categories);
+
+        // Drop down layout style - list view with radio button
+        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        // attaching data adapter to spinner
+        spinner.setAdapter(dataAdapter);
     }
 
-    public void calender(View view)
-    {
-        Intent intent = new Intent(this, Calender.class);
-        startActivity(intent);
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        // On selecting a spinner item
+        if (position != 0) {
+
+
+            String item = parent.getItemAtPosition(position).toString();
+
+            Intent month = new Intent(this, monthView.class);
+            month.putExtra("month", item);
+            startActivity(month);
+
+
+            // Showing selected spinner item
+            Toast.makeText(parent.getContext(), "Selected: " + item, Toast.LENGTH_LONG).show();
+        }
+
     }
 
+    public void onNothingSelected(AdapterView<?> arg0) {
 
+        // TODO Auto-generated method stub
+    }
+
+        /*Intent intent = new Intent(this, Calender.class);
+        startActivity(intent);*/
 }
+
+
+

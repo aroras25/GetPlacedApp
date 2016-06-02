@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#757575"
+    android:background="@drawable/gray1"
     android:fillViewport="true"
     tools:context="com.aroraemc.sahil.getplaced.monthView">
 
@@ -12,25 +12,29 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_margin="@dimen/layout_margin"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/monthViewTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
+            android:layout_marginBottom="16dp"
             android:textColor="@android:color/white"
             android:textSize="35sp" />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/aboutEmc"
+            android:onClick="EMCInfo"
             android:layout_marginBottom="20dp">
 
             <ImageView
                 android:id="@+id/emcLogo"
                 android:layout_width="100dp"
                 android:layout_height="80dp"
+                android:scaleType="centerCrop"
                 android:src="@drawable/emc" />
 
             <TextView
@@ -38,7 +42,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/emcLogo"
-                android:onClick="EMCInfo"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
                 android:textColor="@android:color/white"
                 android:textSize="27sp" />
 
@@ -47,6 +52,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/emc"
+                android:layout_marginLeft="16dp"
                 android:layout_toRightOf="@+id/emcLogo"
                 android:textColor="@android:color/white"
                 android:textSize="20sp" />
@@ -55,20 +61,24 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:onClick="EMCInfo"
+            android:id="@+id/aboutEricsson">
 
             <ImageView
                 android:id="@+id/ericssonLogo"
                 android:layout_width="100dp"
                 android:layout_height="80dp"
+                android:scaleType="centerCrop"
                 android:src="@drawable/ericsson" />
 
             <TextView
-                android:id="@+id/ericson"
+                android:id="@+id/ericsson"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
                 android:layout_toRightOf="@id/ericssonLogo"
-                android:onClick="EricsonInfo"
                 android:textColor="@android:color/white"
                 android:textSize="27sp" />
 
@@ -76,10 +86,125 @@
                 android:id="@+id/dateEricson"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ericson"
+                android:layout_marginLeft="16dp"
+                android:layout_below="@+id/ericsson"
                 android:layout_toRightOf="@+id/ericssonLogo"
                 android:textColor="@android:color/white"
                 android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:id="@+id/aboutFlipkart"
+            android:onClick="EMCInfo">
+
+            <ImageView
+                android:id="@+id/flipkartLogo"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/flipkart" />
+
+            <TextView
+                android:id="@+id/company3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toRightOf="@id/flipkartLogo"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/dateFlipkart"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/company3"
+                android:layout_toRightOf="@+id/flipkartLogo"
+                android:layout_marginLeft="16dp"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:id="@+id/aboutInMobi"
+            android:onClick="EMCInfo">
+
+            <ImageView
+                android:id="@+id/inMobiLogo"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/inmobi" />
+
+            <TextView
+                android:id="@+id/company4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toRightOf="@id/inMobiLogo"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/dateInMobi"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/company4"
+                android:layout_toRightOf="@+id/inMobiLogo"
+                android:layout_marginLeft="16dp"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:id="@+id/aboutSamsung"
+            android:onClick="EMCInfo">
+
+            <ImageView
+                android:id="@+id/samsungLogo"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/samsung" />
+
+            <TextView
+                android:id="@+id/company5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toRightOf="@id/samsungLogo"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/company5"
+                android:id="@+id/dateSamsung"
+                android:layout_toRightOf="@+id/samsungLogo"
+                android:layout_marginLeft="16dp"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
 
         </RelativeLayout>
 

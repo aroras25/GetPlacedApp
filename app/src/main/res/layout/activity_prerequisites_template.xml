@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#757575"
-    android:orientation="vertical"
-    tools:context="com.aroraemc.sahil.getplaced.EMCPrerequisites">
+    android:background="@drawable/gray1"
+    android:fillViewport="true"
+    tools:context="com.aroraemc.sahil.getplaced.PrerequisitesTemplate">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/layout_margin"
+    android:orientation="vertical" >
 
     <TextView
         android:layout_width="match_parent"
+        android:id="@+id/PrerequisiteTitle"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="EMC Prerequisites"
         android:textColor="@android:color/white"
         android:textSize="40sp" />
 
@@ -57,3 +64,4 @@
 
 
 </LinearLayout>
+</ScrollView>

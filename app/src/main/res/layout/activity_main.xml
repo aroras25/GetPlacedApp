@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#757575"
+    android:background="@drawable/gray1"
     android:orientation="vertical"
     tools:context="com.aroraemc.sahil.getplaced.MainActivity">
 
@@ -35,6 +35,7 @@
         android:layout_marginBottom="10dp"
         android:layout_height="wrap_content"
         android:text="Get Started"
+        android:layout_margin="@dimen/layout_margin"
         android:onClick="getStarted"/>
 
 </LinearLayout>

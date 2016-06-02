@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#757575"
+    android:background="@drawable/gray1"
+    android:padding="@dimen/layout_margin"
     android:fillViewport="true"
     tools:context="com.aroraemc.sahil.getplaced.UpcomingCompanies">
 
@@ -20,15 +21,16 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="30dp"
-                android:layout_marginTop="10dp"
                 android:text="Upcoming Companies"
+                android:layout_marginBottom="16dp"
                 android:textColor="@android:color/white"
-                android:textSize="38sp" />
+                android:textSize="30sp" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:id="@+id/aboutEmc"
+                android:onClick="EMCInfo">
 
                 <ImageView
                     android:id="@+id/emcLogo"
@@ -41,8 +43,9 @@
                     android:id="@+id/company1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="8dp"
                     android:layout_toRightOf="@id/emcLogo"
-                    android:onClick="EMCInfo"
                     android:text="EMC "
                     android:textColor="@android:color/white"
                     android:textSize="30sp" />
@@ -51,6 +54,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
                     android:layout_below="@+id/company1"
                     android:layout_toRightOf="@+id/emcLogo"
                     android:text="in 7 days"
@@ -63,7 +67,9 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp">
+                android:layout_marginTop="30dp"
+                android:id="@+id/aboutEricsson"
+                android:onClick="EMCInfo">
 
                 <ImageView
                     android:id="@+id/ericssonLogo"
@@ -76,8 +82,9 @@
                     android:id="@+id/company2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="8dp"
                     android:layout_toRightOf="@id/ericssonLogo"
-                    android:onClick="EricsonInfo"
                     android:text="Ericson "
                     android:textColor="@android:color/white"
                     android:textSize="30sp" />
@@ -89,11 +96,130 @@
                     android:layout_below="@+id/company2"
                     android:layout_toRightOf="@+id/ericssonLogo"
                     android:text="in 18 days"
+                    android:layout_marginLeft="16dp"
                     android:textColor="@android:color/white"
                     android:textSize="20sp" />
 
 
             </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:id="@+id/aboutFlipkart"
+                android:onClick="EMCInfo">
+
+                <ImageView
+                    android:id="@+id/flipkartLogo"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/flipkart" />
+
+                <TextView
+                    android:id="@+id/company3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_toRightOf="@id/flipkartLogo"
+                    android:text="Flipkart "
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/company3"
+                    android:layout_toRightOf="@+id/flipkartLogo"
+                    android:text="in 24 days"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:id="@+id/aboutInMobi"
+                android:onClick="EMCInfo">
+
+                <ImageView
+                    android:id="@+id/inMobiLogo"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/inmobi" />
+
+                <TextView
+                    android:id="@+id/company4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_toRightOf="@id/inMobiLogo"
+                    android:text="inMobi "
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/company4"
+                    android:layout_toRightOf="@+id/inMobiLogo"
+                    android:text="in 30 days"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:id="@+id/aboutSamsung"
+                android:onClick="EMCInfo">
+
+                <ImageView
+                    android:id="@+id/samsungLogo"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/samsung" />
+
+                <TextView
+                    android:id="@+id/company5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_toRightOf="@id/samsungLogo"
+                    android:text="Samsung "
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/company5"
+                    android:layout_toRightOf="@+id/samsungLogo"
+                    android:text="in 36 days"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+
+            </RelativeLayout>
+
 
             <Button
                 android:layout_width="wrap_content"
@@ -101,7 +227,15 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="50dp"
                 android:onClick="calender"
-                android:text="Sort By Calender" />
+                android:text="Sort By Calender"
+                />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_margin="@dimen/layout_margin"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="#ffffff" />
 
         </LinearLayout>
 

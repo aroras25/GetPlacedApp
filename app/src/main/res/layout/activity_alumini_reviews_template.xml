@@ -4,24 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#757575"
+    android:background="@drawable/gray1"
     android:fillViewport="true"
-    tools:context="com.aroraemc.sahil.getplaced.EricsonAluminiReviews">
-
+    tools:context="com.aroraemc.sahil.getplaced.AluminiReviewsTemplate">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_margin="@dimen/layout_margin"
+
         android:orientation="vertical">
+
         <TextView
+            android:id="@+id/AluminiReviewTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/title"
-            android:text="Alumini Reviews"
-            android:textColor="@android:color/white"
-            android:textSize="35sp"
+            android:layout_marginBottom="16dp"
             android:gravity="center_horizontal"
-            android:layout_marginBottom="20dp"/>
+            android:textColor="@android:color/white"
+            android:textSize="35sp" />
 
 
         <RelativeLayout
@@ -29,63 +30,67 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_width="100dp"
                 android:id="@+id/pic"
+                android:layout_width="100dp"
                 android:layout_height="80dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/firstface"
-                />
+                android:src="@drawable/firstface" />
 
             <TextView
-                android:layout_width="wrap_content"
                 android:id="@+id/name"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@android:color/white"
-                android:text="Jacob : "
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
                 android:layout_toRightOf="@id/pic"
-                android:textSize="20sp"/>
+                android:text="Jacob : "
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@android:color/white"
-                android:layout_toRightOf="@+id/pic"
+                android:layout_marginLeft="16dp"
                 android:layout_below="@+id/name"
-                android:text="Great one. Join it ASAP" />
+                android:layout_toRightOf="@+id/pic"
+                android:text="Great one. Join it ASAP"
+                android:textColor="@android:color/white" />
 
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp">
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp">
 
             <ImageView
                 android:id="@+id/pic2"
                 android:layout_width="100dp"
-                android:layout_alignParentLeft="true"
                 android:layout_height="80dp"
-                android:src="@drawable/second"
+                android:layout_alignParentLeft="true"
                 android:scaleType="centerCrop"
-                />
+                android:src="@drawable/second" />
 
             <TextView
-                android:layout_width="match_parent"
                 android:id="@+id/name2"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@android:color/white"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
                 android:layout_toRightOf="@+id/pic2"
                 android:text="Mr. Been : "
-                android:textSize="20sp"/>
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@android:color/white"
-                android:layout_toRightOf="@+id/pic2"
                 android:layout_below="@+id/name2"
-                android:text="Best Place to Work" />
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/pic2"
+                android:text="Best Place to Work"
+                android:textColor="@android:color/white" />
 
         </RelativeLayout>
 
@@ -94,66 +99,72 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_width="100dp"
                 android:id="@+id/pic"
+                android:layout_width="100dp"
                 android:layout_height="80dp"
+                android:scaleType="centerCrop"
                 android:src="@drawable/third"
-                android:scaleType="centerCrop"
 
                 />
 
             <TextView
-                android:layout_width="wrap_content"
                 android:id="@+id/name"
-                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Mr. Gunther : "
                 android:layout_toRightOf="@id/pic"
-                android:textSize="20sp"/>
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="Mr. Gunther : "
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/pic"
-                android:textColor="@android:color/white"
                 android:layout_below="@+id/name"
-                android:text="Not a good one for freshers" />
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/pic"
+                android:text="Not a good one for freshers"
+                android:textColor="@android:color/white" />
 
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp">
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp">
             >
 
             <ImageView
                 android:id="@+id/pic2"
                 android:layout_width="100dp"
-                android:layout_alignParentLeft="true"
                 android:layout_height="80dp"
-                android:src="@drawable/fourth"
+                android:layout_alignParentLeft="true"
                 android:scaleType="centerCrop"
+                android:src="@drawable/fourth"
 
                 />
 
             <TextView
-                android:layout_width="match_parent"
                 android:id="@+id/name2"
-                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/pic2"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
                 android:text="Ross : "
-                android:textSize="20sp"/>
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@android:color/white"
-                android:layout_toRightOf="@+id/pic2"
                 android:layout_below="@+id/name2"
-                android:text="Take it, we will meet you there" />
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/pic2"
+                android:text="Take it, we will meet you there"
+                android:textColor="@android:color/white" />
 
         </RelativeLayout>
 
@@ -162,66 +173,72 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_width="100dp"
                 android:id="@+id/pic"
+                android:layout_width="100dp"
                 android:layout_height="80dp"
-                android:src="@drawable/fifth"
                 android:scaleType="centerCrop"
+                android:src="@drawable/fifth"
 
                 />
 
             <TextView
-                android:layout_width="wrap_content"
                 android:id="@+id/name"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@android:color/white"
-                android:text="Tony Stark : "
                 android:layout_toRightOf="@id/pic"
-                android:textSize="20sp"/>
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="Tony Stark : "
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@android:color/white"
-                android:layout_toRightOf="@+id/pic"
                 android:layout_below="@+id/name"
-                android:text="Limited technologies used" />
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/pic"
+                android:text="Limited technologies used"
+                android:textColor="@android:color/white" />
 
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp">
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp">
             >
 
             <ImageView
                 android:id="@+id/pic2"
                 android:layout_width="100dp"
-                android:layout_alignParentLeft="true"
                 android:layout_height="80dp"
-                android:src="@drawable/sixth"
+                android:layout_alignParentLeft="true"
                 android:scaleType="centerCrop"
+                android:src="@drawable/sixth"
 
                 />
 
             <TextView
-                android:layout_width="match_parent"
                 android:id="@+id/name2"
-                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
                 android:layout_toRightOf="@+id/pic2"
                 android:text="Mr. Been's brother : "
-                android:textSize="20sp"/>
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@android:color/white"
-                android:layout_toRightOf="@+id/pic2"
                 android:layout_below="@+id/name2"
-                android:text="Come and join" />
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/pic2"
+                android:text="Come and join"
+                android:textColor="@android:color/white" />
 
         </RelativeLayout>
 
@@ -230,70 +247,76 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_width="100dp"
                 android:id="@+id/pic"
+                android:layout_width="100dp"
                 android:layout_height="80dp"
-                android:src="@drawable/seventh"
                 android:scaleType="centerCrop"
+                android:src="@drawable/seventh"
 
                 />
 
             <TextView
-                android:layout_width="wrap_content"
                 android:id="@+id/name"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/pic"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
                 android:text="Jessica : "
                 android:textColor="@android:color/white"
-                android:layout_toRightOf="@id/pic"
-                android:textSize="20sp"/>
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/pic"
-                android:textColor="@android:color/white"
                 android:layout_below="@+id/name"
-                android:text="Do not think about it." />
+                android:layout_toRightOf="@+id/pic"
+                android:layout_marginLeft="16dp"
+                android:text="Do not think about it."
+                android:textColor="@android:color/white" />
 
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp">
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp">
 
 
             <ImageView
                 android:id="@+id/pic2"
                 android:layout_width="100dp"
-                android:layout_alignParentLeft="true"
                 android:layout_height="80dp"
-                android:src="@drawable/eighth"
+                android:layout_alignParentLeft="true"
                 android:scaleType="centerCrop"
+                android:src="@drawable/eighth"
 
                 />
 
             <TextView
-                android:layout_width="match_parent"
                 android:id="@+id/name2"
-                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/pic2"
                 android:text="Mr. Sahil Arora: "
-                android:textSize="20sp"/>
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="match_parent"
-                android:textColor="@android:color/white"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/pic2"
                 android:layout_below="@+id/name2"
-                android:text="Being a CEO, I will make sure you get the best out of joining with us." />
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/pic2"
+                android:text="Being a CEO, I will make sure you get the best out of joining with us."
+                android:textColor="@android:color/white" />
 
         </RelativeLayout>
 
-        </LinearLayout>
 
-    </ScrollView>
+    </LinearLayout>
 
+</ScrollView>
